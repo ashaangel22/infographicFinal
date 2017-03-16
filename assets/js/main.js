@@ -4,6 +4,8 @@ $(document).ready(function(){
     
     var controller = new ScrollMagic.Controller();
 
+    TweenMax.from(".heading .notice", 2, {top:"-300%"}, 1);
+
 	$('.people').eq(0);
 
 	var tl = new TimelineMax();

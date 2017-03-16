@@ -148,7 +148,9 @@ header {
     z-index: -1;
     transform: translate(-50%, -50%);
     background: #fbf9ec;
-    border: 2px dashed #d7d3b3; }
+    border: 2px dashed #d7d3b3; 
+  }
+
 
 .demands, .demands2, .demands3, .demands4 {
   position: relative;
