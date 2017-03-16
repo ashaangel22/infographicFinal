@@ -12,6 +12,8 @@ TABLE OF CONTENTS:
 ==============================================
 */
 /* 1. Main Layout ================================= */
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
 * {
   box-sizing: border-box; }
 
@@ -38,12 +40,26 @@ h1 {
   font-size: 3vw;
   white-space: nowrap;
   line-height: 150%; }
+  h1 strong {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold; }
 
 h2 {
   color: #3a3a3c;
   font-size: 2vw;
   margin: 5%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.3; }
+
+h3 {
+  font-size: 3vw;
+  color: #bf1e2d;
+  font-weight: bold;
+  margin-bottom: 18%;
+  text-transform: uppercase;
+  font-family: sans-serif; }
 
 h4 {
   font-size: 1.5vw;
@@ -57,6 +73,25 @@ h5 {
   color: #bf1e2d;
   margin: 5%;
   line-height: 150%; }
+
+h6 {
+  font-family: 'Open Sans', serif; }
+
+h6 {
+  position: relative;
+  color: #000;
+  font-size: 2.3vw;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+  top: 45%; }
+  h6 strong {
+    font-size: 2.8vw;
+    font-weight: 900; }
+  h6 em {
+    font-size: 4vw;
+    font-weight: 900; }
 
 /* 2. Content ================================= */
 header {
@@ -131,7 +166,12 @@ header {
   width: 30%;
   height: 80%;
   left: 10%;
-  top: -10%; }
+  top: -10%;
+  animation-name: sign;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s; }
   .sign .body {
     position: relative;
     width: 100%;
@@ -154,112 +194,256 @@ header {
       left: 50%;
       z-index: -1; }
 
-.ghettos {
+@keyframes sign {
+  0% {
+    transform: rotate(5deg); }
+  100% {
+    transform: rotate(-5deg); } }
+
+.ghettos, .schools, .jobs, .wage {
   position: relative;
   height: 500px;
   width: 100%;
   background: #ffffff; }
+
+.ghettos {
+  height: auto; }
   .ghettos .building {
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    margin-top: 5%;
+    transform: translateX(-50%); }
   .ghettos .imageContainer {
     display: flex;
     align-items: flex-end;
     height: auto;
-    margin-left: 20%;
-    width: 60%;
+    margin-top: -5%;
+    margin-left: 5%;
+    width: 90%;
     justify-content: space-around; }
     .ghettos .imageContainer .people {
-      position: relative; }
+      position: relative;
+      left: -100%; }
   .ghettos .imageContainer2 {
     display: flex;
     align-items: flex-end;
     height: 120px;
-    margin-left: 20%;
-    width: 60%;
-    justify-content: space-around; }
+    margin-top: -5%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+    width: 90%;
+    justify-content: space-around;
+    border-bottom: 5px dashed #bf1e2d; }
     .ghettos .imageContainer2 .people2 {
-      position: relative; }
+      position: relative;
+      left: -100%; }
+  .ghettos .imageContainer3 {
+    display: flex;
+    align-items: flex-end;
+    height: 120px;
+    margin-bottom: 5%;
+    margin-left: 12%;
+    width: 40%;
+    justify-content: space-around; }
+    .ghettos .imageContainer3 .people3 {
+      position: relative;
+      left: -100%; }
 
-.schools, .jobs, .wage {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: #ffffff; }
+#trigger4, #trigger5, #trigger6 {
+  position: absolute;
+  top: 50%; }
 
-.schools .badSchool {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  height: auto; }
-  .schools .badSchool img {
-    width: 45vw;
-    margin-left: 8%;
-    z-index: -1; }
-
-.schools .goodSchool {
-  display: inline-block;
-  position: relative;
-  float: left;
-  width: 50%; }
-  .schools .goodSchool img {
-    width: 20vw;
-    margin-left: 25%;
-    z-index: -1; }
-  .schools .goodSchool .schoolImg {
-    position: relative; }
-    .schools .goodSchool .schoolImg img {
-      position: absolute;
-      width: 27vw;
-      margin-left: 25%;
-      z-index: 0; }
-    .schools .goodSchool .schoolImg .flagContainer {
-      position: absolute;
-      left: 32%;
-      height: 60%;
-      z-index: 1;
-      top: 2vw; }
-      .schools .goodSchool .schoolImg .flagContainer .stick {
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        width: 5px;
-        height: 30vh;
-        background: #3a3a3c;
-        z-index: 0; }
-
-.jobs .black, .jobs .white, .jobs .old {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  align-items: flex-end; }
-  .jobs .black .percentage, .jobs .white .percentage, .jobs .old .percentage {
-    width: 100px;
+.schools {
+  height: 700px; }
+  .schools .badSchool {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50%;
     height: 100%; }
+    .schools .badSchool img {
+      width: 45vw; }
+    .schools .badSchool .crowd {
+      position: relative;
+      margin-left: 8%;
+      margin-top: 60%; }
+    .schools .badSchool .container {
+      position: relative; }
+    .schools .badSchool .image {
+      position: absolute;
+      margin-left: 8%;
+      margin-top: 0%; }
+    .schools .badSchool .imageOne {
+      z-index: 0; }
+    .schools .badSchool .imageTwo {
+      z-index: 1; }
+    .schools .badSchool .imageTwo.animate {
+      animation-name: fadeOut;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      animation-delay: 1s; }
+  .schools .goodSchool {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%; }
+    .schools .goodSchool img {
+      width: 20vw;
+      margin-left: 25%;
+      z-index: -1; }
+    .schools .goodSchool .schoolImg {
+      position: relative;
+      width: 100%;
+      height: 250px; }
+      .schools .goodSchool .schoolImg img {
+        position: absolute;
+        margin-left: 25%;
+        width: 60%;
+        z-index: 0; }
+      .schools .goodSchool .schoolImg .flagContainer {
+        position: absolute;
+        left: 32%;
+        height: 92%;
+        z-index: 1;
+        top: 2%; }
+        .schools .goodSchool .schoolImg .flagContainer .stick {
+          position: absolute;
+          left: 0%;
+          bottom: 0%;
+          width: 5px;
+          height: 80%;
+          background: #3a3a3c;
+          z-index: 0; }
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0; } }
 
 .flag {
-  width: 10vw;
-  height: 6vw;
+  width: 70px;
+  height: 45px;
   z-index: 1; }
 
 .flag-element {
   animation: flag 1s ease-in-out infinite alternate;
   background: url("../img/flag.jpg");
-  background-size: 10vw 100%;
+  background-size: 70px 100%;
   position: relative;
   height: 100%;
   width: 1px;
   display: inline-block;
   box-shadow: 0 1px grey, 0 -1px gray;
   z-index: 1;
-  margin-top: 1vw; }
+  margin-top: 70%; }
 
 @keyframes flag {
   0% {
     top: 5%; }
   100% {
     top: -5%; } }
+
+.jobs .black, .jobs .white, .jobs .old {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: flex-end; }
+  .jobs .black img, .jobs .white img, .jobs .old img {
+    margin-right: 1vw;
+    opacity: 0; }
+  .jobs .black .percentage, .jobs .white .percentage, .jobs .old .percentage {
+    width: 9vw;
+    margin-left: 5%; }
+    .jobs .black .percentage h3 span, .jobs .white .percentage h3 span, .jobs .old .percentage h3 span {
+      display: inline-block; }
+
+.wage {
+  height: 100vh;
+  overflow-y: hidden; }
+  .wage .family {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 50%; }
+    .wage .family img {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      width: 30vw; }
+  .wage .money {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 90%;
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%; }
+    .wage .money .textBox {
+      position: absolute;
+      top: 0%;
+      left: 15vw;
+      width: 18vw;
+      height: 45%;
+      z-index: 1; }
+      .wage .money .textBox h3 {
+        position: absolute;
+        color: #a7a9ac;
+        font-size: 2vw;
+        line-height: 1.2;
+        opacity: 0; }
+      .wage .money .textBox .povertyText {
+        top: -5%; }
+      .wage .money .textBox .povertyText.animate {
+        animation-name: fadeInUp;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s; }
+      .wage .money .textBox .currentText {
+        bottom: -5%; }
+      .wage .money .textBox .currentText.animate {
+        animation-name: fadeInUp;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s; }
+    .wage .money img {
+      width: 10vw;
+      height: 100%;
+      z-index: -1; }
+    .wage .money .poverty {
+      position: absolute;
+      top: 0%;
+      left: -5%;
+      height: 36%;
+      width: 15vw;
+      z-index: 0;
+      border-bottom: 2px dashed #6d6e71; }
+    .wage .money .current {
+      position: absolute;
+      top: 0%;
+      left: -5%;
+      height: 100%;
+      width: 15vw;
+      background: white;
+      z-index: 0;
+      border-bottom: 2px dashed #bf1e2d; }
+    .wage .money .current.animate {
+      animation-name: reveal;
+      animation-timing-function: ease;
+      animation-duration: 3s;
+      animation-fill-mode: forwards; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes reveal {
+  100% {
+    height: 0%; } }
 
 /*# sourceMappingURL=main.css.map */
