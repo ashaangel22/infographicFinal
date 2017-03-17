@@ -5,7 +5,7 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     TweenMax.from("header h1", 1, {left: "-100%", opacity: 0, delay: 1});
-    TweenMax.from(".heading .notice", 2, {top:"-300%", delay: 2});
+    TweenMax.from(".heading .notice", 2, {top:"-150%", delay: 2});
 
 	$('.people').eq(0);
 

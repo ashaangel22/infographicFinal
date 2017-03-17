@@ -145,7 +145,7 @@ header {
     position: absolute;
     width: 58%;
     height: auto;
-    top: -100%;
+    top: -50%;
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
@@ -485,84 +485,46 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 420px) {
-  h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 6vw;
-  white-space: nowrap;
-  line-height: 150%; }
+@media screen and (max-width: 425px) and (min-width: 0px){
+    h1 {
+        font-size: 6vw;}
   
-  h1 strong {
+    h1 strong {
     font-family: 'Architects Daughter', cursive;
     font-weight: bold; }
 
-  h2 {
-    color: #3a3a3c;
-    font-size: 4vw;
+    h2 {
+    font-size: 3vw;
     margin: 5%;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: bold;
     line-height: 1.3; }
 
-  h3 {
+    h3 {
     font-size: 4vw;
-    color: #bf1e2d;
-    font-weight: bold;
-    margin-bottom: 18%;
-    text-transform: uppercase;
-    font-family: sans-serif; }
+    margin-bottom: 18%; }
 
-  h4 {
+    h4 {
     font-size: 4vw;
-    color: #3a3a3c;
     margin: 20% 5% 5% 5%;
     line-height: 150%; }
 
-  h5 {
+    h5 {
     font-size: 3vw;
-    color: #3a3a3c;
-    color: #bf1e2d;
     margin: 5%;
     line-height: 150%; }
 
-  h6 {
-    position: relative;
-    color: #000;
+    h6 {
     font-size: 5.5vw;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
     margin-bottom: 3%;
     top: 45%; }
     h6 strong {
       font-size: 7vw;
       font-weight: 900; }
     h6 em {
-      font-size: 4vw;
+      font-size: 7vw;
       font-weight: 900; }
 
-  header {
-    position: relative;
-    height: 50%;
-    width: 100%; }
+    header {
+    height: 50%;}
       header .titleBanner {
         position: absolute;
         top: 0%;
@@ -571,16 +533,16 @@ header {
         width: 100%;
         height: 60%;
         background: #bf1e2d; }
-        
+
         header .titleBanner .triangle-topleft {
           display: none; }
         header .titleBanner .triangle-topright {
           display: none; }
-      
+
       header .bannerBack {
         display: none;}
 
-  .heading {
+    .heading {
     position: relative;
     width: 100%;
     height: 40%;
@@ -606,7 +568,7 @@ header {
     border-top: 2px solid #818285;
     z-index: 0; }
 
-  .titleText {
+    .titleText {
     position: relative;
     left: 0%;
     width: 100%;
@@ -614,13 +576,12 @@ header {
     border-left: none;
     border-bottom: 2px dashed #818285;  }
 
-  .sign {
-    position: relative;
-    width: 80%;
+    .sign {
+    width: 70%;
     height: 50%;
     left: 10%;
-    top: -10%;
-  }
+    top: -5%;
+    }
     .sign .body {
       position: relative;
       width: 100%;
@@ -644,20 +605,21 @@ header {
         z-index: -1; }
 
 
-  .ghettos, .schools, .jobs, .wage {
+    .ghettos, .schools, .jobs, .wage {
     position: relative;
     width: 100%;
     background: #ffffff; 
     overflow-x: hidden;
-  }
+    }
 
-  .ghettos {
+    .ghettos {
     height: 60%;
-  }
+    overflow-y: hidden;
+    }
     .ghettos .building {
       display: inline-block;
       position: relative;
-      width: 60vw;
+      width: 50vw;
       left: 50%;
       margin-top: 5%;
       transform: translateX(-50%); }
@@ -671,7 +633,7 @@ header {
       .ghettos .imageContainer .people {
         position: relative;
         left: -700px; 
-        width: 18px;
+        width: 15px;
       }
     .ghettos .imageContainer2 {
       display: flex;
@@ -686,7 +648,7 @@ header {
       .ghettos .imageContainer2 .people2 {
         position: relative;
         left: -700px; 
-        width: 18px;
+        width: 15px;
       }
     .ghettos .imageContainer3 {
       display: flex;
@@ -699,35 +661,25 @@ header {
       .ghettos .imageContainer3 .people3 {
         position: relative;
         left: -700px; 
-        width: 18px;
+        width: 15px;
       }
 
-  #trigger4, #trigger5, #trigger6 {
+    #trigger4, #trigger5, #trigger6 {
     position: absolute;
-    top: 50%; }
+    top: 30%; }
 
 
-@keyframes fadeOut {
-  100% {
-    opacity: 0; } }
+    .flag {
+    width: 40px;
+    height: 25px;
+    }
 
-.flag {
-  width: 40px;
-  height: 25px;
-}
-
-.flag-element {
-  background-size: 40px 100%;
-  margin-top: 50%; }
-
-@keyframes flag {
-  0% {
-    top: 5%; }
-  100% {
-    top: -5%; } }
+    .flag-element {
+    background-size: 40px 100%;
+    margin-top: 50%; }
 
 
-  .jobs .black, .jobs .white, .jobs .old {
+    .jobs .black, .jobs .white, .jobs .old {
     width: 100%;
     height: 33%;
     display: flex;
@@ -742,8 +694,6 @@ header {
       .jobs .black .percentage h3 span, .jobs .white .percentage h3 span, .jobs .old .percentage h3 span {
         display: inline-block; }
 
-  .wage {
-    overflow-y: hidden; }
     .wage .family {
       display: inline-block;
       float: left;
@@ -754,69 +704,10 @@ header {
         bottom: 5%;
         left: 5%;
         width: 40vw; }
-    .wage .money {
-      position: relative;
-      display: inline-block;
-      float: left;
-      height: 90%;
-      width: 50%;
-      margin-top: 3%;
-      margin-bottom: 3%; }
-      .wage .money .textBox {
-        position: absolute;
-        top: 0%;
-        left: 15vw;
-        width: 18vw;
-        height: 45%;
-        z-index: 1; }
         .wage .money .textBox h3 {
-          position: absolute;
-          color: #a7a9ac;
           font-size: 4vw;
-          line-height: 1.2;
-          opacity: 0; }
-        .wage .money .textBox .povertyText {
-          top: -5%; }
-        .wage .money .textBox .povertyText.animate {
-          animation-name: fadeInUp;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-fill-mode: forwards;
-          animation-delay: 1.7s; }
-        .wage .money .textBox .currentText {
-          bottom: -5%; }
-        .wage .money .textBox .currentText.animate {
-          animation-name: fadeInUp;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-fill-mode: forwards;
-          animation-delay: 1s; }
+          line-height: 1.2; }
       .wage .money img {
-        width: 10vw;
-        height: 100%;
-        z-index: -1; }
-      .wage .money .poverty {
-        position: absolute;
-        top: 0%;
-        left: -5%;
-        height: 36%;
-        width: 15vw;
-        z-index: 0;
-        border-bottom: 2px dashed #6d6e71; }
-      .wage .money .current {
-        position: absolute;
-        top: 0%;
-        left: -5%;
-        height: 100%;
-        width: 15vw;
-        background: white;
-        z-index: 0;
-        border-bottom: 2px dashed #bf1e2d; }
-      .wage .money .current.animate {
-        animation-name: reveal;
-        animation-timing-function: ease;
-        animation-duration: 3s;
-        animation-fill-mode: forwards; }
+        width: 10vw;}
 }
 
-/*# sourceMappingURL=main.css.map */
