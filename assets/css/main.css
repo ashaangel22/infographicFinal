@@ -107,11 +107,11 @@ header {
   width: 100%; }
   header .titleBanner {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
-    height: 60%;
+    height: 50%;
     background: #bf1e2d; }
     header .titleBanner .triangle-topleft {
       position: absolute;
@@ -130,9 +130,9 @@ header {
       border-left: 20px solid transparent; }
   header .bannerBack {
     position: absolute;
-    top: 11.6%;
+    top: 6.6%;
     width: 100%;
-    height: 60%;
+    height: 50%;
     background: #97121f;
     z-index: -1; }
 
@@ -145,7 +145,7 @@ header {
     position: absolute;
     width: 58%;
     height: auto;
-    top: -50%;
+    top: -200%;
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
@@ -483,9 +483,154 @@ header {
   100% {
     height: 0%; } }
 
+@media screen and (max-width: 1600px){
+    .heading .notice {
+      width: 57.3%;
+      top: -200%;
+    }
+}
+
+@media screen and (max-width: 1500px){
+  .flag {
+    width: 100px;
+    height: 60px;
+    z-index: 1; }
+
+  .flag-element {
+    animation: flag 1s ease-in-out infinite alternate;
+    background: url("../img/flag.jpg");
+    background-size: 100px 100%;
+    position: relative;
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+    box-shadow: 0 1px grey, 0 -1px gray;
+    z-index: 1;
+    margin-top:70%; }
+
+@media screen and (max-width: 1200px){
+    .heading .notice {
+      width: 56%;
+      top: -200%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+  h1 {
+  font-size: 4vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+
+  h4 {
+    font-size: 2vw;
+  }
+
+  h5 {
+    font-size: 3vw;
+  }
 
 
-@media screen and (max-width: 425px) and (min-width: 0px){
+  h6 {
+    font-size: 4vw;
+  }
+    h6 strong {
+      font-size: 5vw;
+    }
+    h6 em {
+      font-size: 4vw;
+    }
+
+  header .titleBanner {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 50%;
+    background: #bf1e2d; }
+    header .titleBanner .triangle-topleft {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: 20px solid #680005;
+      border-right: 20px solid transparent; }
+    header .titleBanner .triangle-topright {
+      position: absolute;
+      bottom: -20px;
+      width: 0;
+      height: 0;
+      border-top: 20px solid #680005;
+      border-left: 20px solid transparent; }
+  header .bannerBack {
+    position: absolute;
+    top: 6.6%;
+    width: 100%;
+    height: 50%;
+    background: #97121f;
+    z-index: -1; }
+
+  .heading {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px; }
+    .heading .notice {
+      position: absolute;
+      width: 66%;
+      height: auto;
+      top: -190%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      background: #fbf9ec;
+      border: 2px dashed #d7d3b3; 
+    }
+
+  .sign {
+    width: 40%;
+    height: 70%;
+    left: 5%;
+    top: -5%;
+  }
+
+}
+
+@media screen and (max-width: 870px){
+  .ghettos {
+  height: 60%;
+  }
+    .ghettos .imageContainer .people { 
+      width: 25px;}
+  .ghettos .imageContainer2 {
+    margin-top: -3%;
+    margin-left: 4%;
+    padding-bottom: 5%;}
+    .ghettos .imageContainer2 .people2 {
+      width: 25px;}
+  .ghettos .imageContainer3 {
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 12%;
+    width: 40%;
+    justify-content: space-around; }
+    .ghettos .imageContainer3 .people3 {
+      width: 25px;}
+
+}
+
+@media screen and (max-width: 500px){
     h1 {
         font-size: 6vw;}
   
@@ -551,7 +696,7 @@ header {
       position: absolute;
       width: 88%;
       height: auto;
-      top: -5%;
+      top: -17%;
       left: 50%;
       z-index: -1;
       transform: translate(-50%, -50%);
@@ -613,7 +758,7 @@ header {
     }
 
     .ghettos {
-    height: 60%;
+    height: 40%;
     overflow-y: hidden;
     }
     .ghettos .building {
@@ -704,6 +849,8 @@ header {
         bottom: 5%;
         left: 5%;
         width: 40vw; }
+        .wage .money .textBox .povertyText {
+        top: 0%; }
         .wage .money .textBox h3 {
           font-size: 4vw;
           line-height: 1.2; }
